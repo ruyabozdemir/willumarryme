@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teklif</title>
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            margin-top: 50px;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #yes {
+            background-color: green;
+            color: white;
+        }
+        #no {
+            background-color: gray;
+            color: white;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\Rüya\Desktop\proposal.gif" alt="Teklif Görseli">
+    <h1>Benimle evlenir misin?</h1>
+    <div class="buttons">
+        <button id="yes">Evet</button>
+        <button id="no">Hayır</button>
+    </div>
+    <p id="message" style="font-size: 18px; color: red; margin-top: 10px;"></p>
+
+    <script>
+        document.getElementById("no").addEventListener("click", function() {
+            document.getElementById("message").innerText = "Soruyu yanlış anladın galiba canım";
+        });
+    </script>
+</body>
+</html>
